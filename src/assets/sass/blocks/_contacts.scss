@@ -1,0 +1,122 @@
+.contacts{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contacts__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts__form{
+    margin-top: 80px;
+}
+
+
+
+.contacts__left{
+    flex-basis: 47%;
+
+    display: flex;
+    flex-direction: column;
+
+    input{
+        width: 100%;
+        height: 31px;
+        margin-bottom: 30px;
+        padding-left: 15px;
+
+        border: none;
+        border-bottom: 1px solid $grayFour;
+
+        color: $black;
+        
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &::-webkit-input-placeholder {color:#bdbdbd;}
+        &::-moz-placeholder          {color:#bdbdbd;} 
+        &:-moz-placeholder           {color:#bdbdbd;} 
+        &:-ms-input-placeholder      {color:#bdbdbd;}
+
+        transition: all .2s linear;
+
+        &:focus{
+            outline: none;
+            border-bottom-color: darken($grayFour, 30%)
+        }
+    }
+}
+
+.contacts__right{
+    flex-basis: 47%;
+
+    textarea{
+        width: 100%;
+        height: 100%;
+        padding-left: 15px;
+
+        border: none;
+        border-bottom: 1px solid $grayFour;
+        resize: none;
+
+        color: $black;
+
+        &::-webkit-input-placeholder {color:#bdbdbd;}
+        &::-moz-placeholder          {color:#bdbdbd;} 
+        &:-moz-placeholder           {color:#bdbdbd;} 
+        &:-ms-input-placeholder      {color:#bdbdbd;}
+
+        transition: all .2s linear;
+        
+        &:focus{
+            outline: none;
+            border-bottom-color: darken($grayFour, 30%)
+        }
+    }
+}
+
+.contacts__form{
+    text-align: center;
+}
+
+.contacts__btn{
+    margin-top: 40px;
+    padding: 15px 20px;
+}
+
+
+
+@media (max-width: 476px){
+    
+    .contacts{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .contacts__form{
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 414px){
+
+    .contacts__form{
+        margin-top: 30px;
+    }
+
+    .contacts__left{
+        flex-basis: 100%;
+    }
+
+    .contacts__right{
+        margin-top: 30px;
+        min-height: 100px;
+
+        flex-basis: 100%;
+    }
+
+}

@@ -1,0 +1,9 @@
+.network{
+    fill: #cccccc;
+
+    transition: fill .2s linear, transform .2s linear;
+    &:hover{
+        fill: #1160c7;
+        transform: scale(1.2);
+    }
+}

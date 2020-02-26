@@ -1,0 +1,33 @@
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: $black;
+}
+
+.footer__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social-media__net {
+    width: 15px;
+    height: 15px;
+}
+
+.footer .social-media__link{
+    margin-right: 25px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.footer__copy{
+    margin-top: 10px;
+
+    text-align: center;
+ 
+    font-size: 12px;
+}

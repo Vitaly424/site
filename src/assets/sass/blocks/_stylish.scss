@@ -1,0 +1,32 @@
+.stylish{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background: url('../../assets/img/stylish/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+}
+
+.stylish__title{
+    color: $white;
+
+    &:after{
+        background-color: $white;
+    }
+}
+
+.stylish__subtitle{
+    margin-bottom: 30px;
+}
+
+@media (max-width: 542px){
+
+    .stylish{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+}   
